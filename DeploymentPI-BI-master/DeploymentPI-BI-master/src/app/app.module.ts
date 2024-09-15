@@ -14,6 +14,7 @@ import { ClientDashboardComponent } from './components/client-dashboard/client-d
 import { HttpClientModule } from '@angular/common/http';
 import { FournisseurDashboardComponent } from './fournisseur-dashboard/fournisseur-dashboard.component';
 import { ArticleDashboardComponent } from './components/article-dashboard/article-dashboard.component';
+import { PredictionComponent } from './components/prediction/prediction.component';
 
 
 
@@ -27,7 +28,8 @@ import { ArticleDashboardComponent } from './components/article-dashboard/articl
     OverviewComponent,
     ClientDashboardComponent,
     FournisseurDashboardComponent,
-    ArticleDashboardComponent
+    ArticleDashboardComponent,
+    PredictionComponent
   ],
   imports: [
     BrowserModule,
