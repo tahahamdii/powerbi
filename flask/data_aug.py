@@ -10,7 +10,7 @@ def generate_best_sold_period():
     return f"{start_month}-2024 to {end_month}-2024"
 
 input_file = 'data.xls'  
-df = pd.read_csv(input_file)
+df = pd.read_excel(input_file)
 
 df['Units Sold'] = df.apply(lambda row: generate_units_sold(), axis=1)
 df['Best Sold Period'] = df.apply(lambda row: generate_best_sold_period(), axis=1)
