@@ -12,6 +12,8 @@
             <nav id="primary-nav" class="dropdown cf">
               <ul class="dropdown menu">
                 <li class='active' routerLink="overview"><a>Home</a></li>
+                <li class='active' routerLink="prediction"><a>Prediction</a></li>
+
                 <li *ngIf="userRole === 'manager' || userRole === 'fournisseur'">
                   <a routerLink="fournisseur" class="nav-link">Fournisseur Dashboard</a>
                 </li>
