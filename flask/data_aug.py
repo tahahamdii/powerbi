@@ -14,3 +14,6 @@ df = pd.read_csv(input_file)
 
 df['Units Sold'] = df.apply(lambda row: generate_units_sold(), axis=1)
 df['Best Sold Period'] = df.apply(lambda row: generate_best_sold_period(), axis=1)
+
+output_file = 'augmented_data.xlsx'  
+df.to_excel(output_file, index=False)
